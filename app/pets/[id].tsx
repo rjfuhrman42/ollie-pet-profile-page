@@ -5,8 +5,14 @@ import { pets } from "../../data/pets";
 
 export default function Route() {
   const local = useLocalSearchParams();
-  const currentPet = pets.find((pet) => pet.id === parseInt(local.id));
-  console.log(currentPet);
+
+  // The current pet id is passed via URL search params "/pets/{pet.id}"
+  // Find the current pet using the provided id
+  const currentPet = pets.find((pet) => {
+    if (pet.id === parseInt(local.id[0])) {
+      return pet;
+    }
+  });
 
   return (
     <View style={styles.container}>
