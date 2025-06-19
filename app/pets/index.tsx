@@ -3,7 +3,7 @@ import { FlatList, StatusBar, StyleSheet, Text, View } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { pets } from "../../data/pets";
 
-export default function Index() {
+export default function PetsList() {
   return (
     <SafeAreaProvider style={styles.container}>
       <FlatList

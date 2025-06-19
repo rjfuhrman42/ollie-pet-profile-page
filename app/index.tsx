@@ -1,7 +1,7 @@
 import { Link } from "expo-router";
-import { View } from "react-native";
+import { Text, View } from "react-native";
 
-export default function Index() {
+export default function HomeScreen() {
   return (
     <View
       style={{
@@ -20,7 +20,7 @@ export default function Index() {
         }}
         href="/pets"
       >
-        View my pets
+        <Text>View my pets</Text>
       </Link>
     </View>
   );
