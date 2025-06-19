@@ -10,7 +10,18 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Link href="/pets">View my pets</Link>
+      <Link
+        style={{
+          borderColor: "hsl(0, 0%, 80%)",
+          borderWidth: 1,
+          borderRadius: 7.5,
+          padding: 15,
+          fontSize: 16,
+        }}
+        href="/pets"
+      >
+        View my pets
+      </Link>
     </View>
   );
 }
