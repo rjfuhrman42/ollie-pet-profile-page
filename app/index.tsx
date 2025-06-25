@@ -30,7 +30,7 @@ export default function HomeScreen() {
           padding: 15,
           fontSize: 16,
         }}
-        href="/pets/addNewPet"
+        href="/pets/addPet"
       >
         <Text>Add a new pet +</Text>
       </Link>
