@@ -22,18 +22,6 @@ export default function HomeScreen() {
       >
         <Text>View my pets</Text>
       </Link>
-      <Link
-        style={{
-          borderColor: "hsl(0, 0%, 80%)",
-          borderWidth: 1,
-          borderRadius: 7.5,
-          padding: 15,
-          fontSize: 16,
-        }}
-        href="/pets/addNewPet"
-      >
-        <Text>Add a new pet +</Text>
-      </Link>
     </View>
   );
 }
